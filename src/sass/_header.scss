@@ -1,0 +1,29 @@
+.headerWrapper {
+  font-size: 2.4rem;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  .brand {
+    margin-left: 5rem;
+    .typo {
+    }
+  }
+  .nav {
+    @include justifyCenter;
+    color: $bg-cream;
+    p {
+      margin: 0 1.5rem;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media screen and (max-width: $sm) {
+  .typeWritter {
+    font-size: 2rem;
+    display: none;
+  }
+}

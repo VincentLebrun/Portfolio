@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "antd/dist/antd.css";
+import "./sass/App.scss";
+import { Col, Row } from "antd";
+import { Lside } from "./components/Lside";
+import { Rside } from "./components/Rside";
+import { Header } from "./components/Header";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+      <Header />
+      <Row>
+        <Col span={12}>
+          <Lside />
+        </Col>
+        <Col span={12}>
+          <Rside />
+        </Col>
+      </Row>
     </div>
   );
-}
+};
 
 export default App;

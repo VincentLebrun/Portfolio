@@ -1,0 +1,37 @@
+@mixin blink {
+  @keyframes blink {
+    50% {
+      opacity: 0.6;
+    }
+  }
+  .layer {
+    animation: 10s blink infinite;
+  }
+  .f2 {
+    animation-delay: 4000ms;
+  }
+  .f3 {
+    animation-delay: 500ms;
+  }
+  .f4 {
+    animation-delay: 1000ms;
+  }
+  .f5 {
+    animation-delay: 1500ms;
+  }
+  .f6 {
+    animation-delay: 2000ms;
+  }
+  .f7 {
+    animation-delay: 2500ms;
+  }
+  .f8 {
+    animation-delay: 3000ms;
+  }
+  .f9 {
+    animation-delay: 3500ms;
+  }
+  .f10 {
+    animation-delay: 4500ms;
+  }
+}

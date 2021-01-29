@@ -1,0 +1,82 @@
+@mixin fonts {
+  @font-face {
+    font-family: "Fira-Bold";
+    src: url("../fonts/FiraCodeBold/FiraCode-Bold.woff") format("woff"),
+      url("../fonts/FiraCodeBold/FiraCode-Bold.woff2") format("woff2"),
+      url("../fonts/FiraCodeBold/FiraCode-Bold.svg#FiraCode-Bold") format("svg"),
+      url("../fonts/FiraCodeBold/FiraCode-Bold.eot"),
+      url("../fonts/FiraCodeBold/FiraCode-Bold.eot?#iefix")
+        format("embedded-opentype"),
+      url("../fonts/FiraCodeBold/FiraCode-Bold.ttf") format("truetype");
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Fira-Light";
+    src: url("../fonts/FiraCodeLight/FiraCode-Light.woff") format("woff"),
+      url("../fonts/FiraCodeLight/FiraCode-Light.woff2") format("woff2"),
+      url("../fonts/FiraCodeLight/FiraCode-Light.svg#FiraCode-Light")
+        format("svg"),
+      url("../fonts/FiraCodeLight/FiraCode-Light.eot"),
+      url("../fonts/FiraCodeLight/FiraCode-Light.eot?#iefix")
+        format("embedded-opentype"),
+      url("../fonts/FiraCodeLight/FiraCode-Light.ttf") format("truetype");
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Fira-Regular";
+    src: url("../fonts/FiraCodeRegular/FiraCode-Regular.woff") format("woff"),
+      url("../fonts/FiraCodeRegular/FiraCode-Regular.woff2") format("woff2"),
+      url("../fonts/FiraCodeRegular/FiraCode-Regular.svg#FiraCode-Regular")
+        format("svg"),
+      url("../fonts/FiraCodeRegular/FiraCode-Regular.eot"),
+      url("../fonts/FiraCodeRegular/FiraCode-Regular.eot?#iefix")
+        format("embedded-opentype"),
+      url("../fonts/FiraCodeRegular/FiraCode-Regular.ttf") format("truetype");
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "IndieFlower-Regular";
+    src: url("../fonts/IndieFlower/IndieFlower-Regular.woff") format("woff"),
+      url("../fonts/IndieFlower/IndieFlower-Regular.woff2") format("woff2"),
+      url("../fonts/IndieFlower/IndieFlower-Regular.svg#IndieFlower-Regular")
+        format("svg"),
+      url("../fonts/IndieFlower/IndieFlower-Regular.eot"),
+      url("../fonts/IndieFlower/IndieFlower-Regular.eot?#iefix")
+        format("embedded-opentype"),
+      url("../fonts/IndieFlower/IndieFlower-Regular.ttf") format("truetype");
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Nexa-Bold";
+    src: url("../fonts/NexaBold.otf") format("truetype");
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Nexa-Light";
+    src: url("../fonts/NexaLight.otf") format("truetype");
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+}
