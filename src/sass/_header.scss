@@ -1,4 +1,5 @@
 .headerWrapper {
+  font-family: "fira-light";
   font-size: 2.4rem;
   padding: 1rem;
   position: absolute;
@@ -8,8 +9,6 @@
   z-index: 1;
   .brand {
     margin-left: 5rem;
-    .typo {
-    }
   }
   .nav {
     @include justifyCenter;

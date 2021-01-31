@@ -1,13 +1,18 @@
 @import "./reset", "./variables", "./right_s", "./left_s", "./floats",
-  "./mixins", "./header", "./fonts.scss";
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap");
+  "./mixins", "./header", "./fonts.scss", "./animation";
+@import "./fonts/fonts.scss";
+// @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap");
+@include blink;
+@include fonts;
 
 body {
   font-family: "Fira Sans", sans-serif;
-  // background-color: $bg-cream;
-  min-height: 100vh;
+  height: 100vh;
 
   .orange {
     color: $orange;
+  }
+  .cream {
+    color: $bg-cream;
   }
 }

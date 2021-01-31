@@ -11,7 +11,7 @@ export const Floats = () => {
     });
   }
   return (
-    <>
+    <div className="floatwrapper">
       <p>
         <span class="orange layer f1" data-speed="3">
           css
@@ -62,6 +62,6 @@ export const Floats = () => {
           react
         </span>
       </p>
-    </>
+    </div>
   );
 };
