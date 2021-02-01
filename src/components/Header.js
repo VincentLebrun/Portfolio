@@ -1,5 +1,6 @@
 import { Col, Row } from "antd";
 import React from "react";
+import { Link } from "react-router-dom";
 import { Typewriter } from "react-typewriting-effect";
 import "react-typewriting-effect/dist/index.css";
 
@@ -28,8 +29,12 @@ export const Header = () => {
         </Col>
         <Col span={12}>
           <div className="nav">
-            <p>home</p>
-            <p>project</p>
+            <Link to="/">
+              <p>home</p>
+            </Link>
+            <Link to="/projets">
+              <p>project</p>
+            </Link>
           </div>
         </Col>
       </Row>

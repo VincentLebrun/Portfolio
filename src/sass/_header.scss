@@ -13,9 +13,21 @@
   .nav {
     @include justifyCenter;
     color: $bg-cream;
-    p {
-      margin: 0 1.5rem;
-      text-transform: uppercase;
+    a {
+      text-decoration: none;
+      color: inherit;
+      p {
+        margin: 0 1.5rem;
+        text-transform: uppercase;
+        transition: all 0.2s ease;
+
+        // text-shadow: 1px 9px 12px rgba(255, 255, 255, 0.3);
+        &:hover {
+          color: $orange;
+          transform: translateY(-0.25rem) scale(1.05);
+          transition: all 0.2s ease;
+        }
+      }
     }
   }
 }

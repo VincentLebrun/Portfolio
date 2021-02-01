@@ -1,0 +1,32 @@
+.rightMain {
+  background-color: $bg-dark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .browserWrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    width: 80%;
+    overflow: hidden;
+    box-shadow: 0 19px 38px rgba(255, 255, 255, 0.25),
+      0 15px 12px rgba(255, 255, 255, 0.25);
+    border-radius: 1.5rem;
+
+    .browser {
+      margin: auto;
+      width: 100%;
+      border-radius: 1.5rem;
+    }
+    .browserContent {
+      position: absolute;
+      width: 100%;
+      top: 10%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+}

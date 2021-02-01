@@ -1,7 +1,6 @@
 @import "./reset", "./variables", "./right_s", "./left_s", "./floats",
-  "./mixins", "./header", "./fonts.scss", "./animation";
+  "./mixins", "./header", "./fonts.scss", "./animation", "./projets";
 @import "./fonts/fonts.scss";
-// @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap");
 @include blink;
 @include fonts;
 

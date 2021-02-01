@@ -20,26 +20,15 @@ export const Lside = () => {
     new hoverEffect({
       parent: container.current,
       intensity: 0.3,
-      image1: "../img/photo.png",
-      image2: "https://picsum.photos/420/620",
-      displacementImage:
-        "https://raw.githubusercontent.com/robin-dela/hover-effect/master/images/fluid.jpg",
+      image1: require("../img/photo.png").default,
+      image2: require("../img/photo.png").default,
+      displacementImage: require("../img/diss.png").default,
     });
   }, [container]);
 
   return (
     <div className="leftMain">
-      <div className="portrait"></div>
-
-      <div
-        className="parent"
-        id="imgContainer"
-        ref={container}
-        style={{
-          width: 400,
-          height: 600,
-        }}
-      />
+      <div className="parent" id="imgContainer" ref={container} />
 
       <div className="floatwrapper">
         <p>
