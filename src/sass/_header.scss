@@ -9,6 +9,9 @@
   z-index: 1;
   .brand {
     margin-left: 5rem;
+    .typo {
+      font-size: 2rem;
+    }
   }
   .nav {
     @include justifyCenter;
@@ -37,4 +40,8 @@
     font-size: 2rem;
     display: none;
   }
+}
+
+@media screen and (max-width: $md) {
+  // Modifier header ici pour rapetisser la brand
 }

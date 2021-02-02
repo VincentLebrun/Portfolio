@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Typewriter } from "react-typewriting-effect";
 import "react-typewriting-effect/dist/index.css";
 
-export const Header = () => {
+export const Header = ({ style }) => {
   return (
     <div className="headerWrapper">
       <Row>
@@ -28,7 +28,7 @@ export const Header = () => {
           </div>
         </Col>
         <Col span={12}>
-          <div className="nav">
+          <div style={style} className="nav">
             <Link to="/">
               <p>home</p>
             </Link>
