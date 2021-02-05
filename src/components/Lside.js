@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import hoverEffect from "hover-effect";
+import { motion } from "framer-motion";
 
 export const Lside = () => {
   document.addEventListener("mousemove", parallax);
@@ -27,8 +28,15 @@ export const Lside = () => {
   }, [container]);
 
   return (
-    <div className="leftMain">
-      <div className="parent" id="imgContainer" ref={container} />
+    <motion.div className="leftMain">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1, duration: 1 }}
+        className="parent"
+        id="imgContainer"
+        ref={container}
+      />
 
       <div className="floatwrapper">
         <p>
@@ -82,6 +90,6 @@ export const Lside = () => {
           </span>
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };

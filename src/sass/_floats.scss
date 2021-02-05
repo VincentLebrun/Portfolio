@@ -1,115 +1,122 @@
-.layer {
-  color: $orange !important;
-  font-family: IndieFlower-Regular;
-}
+.floatwrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  .layer {
+    color: $orange !important;
+    font-family: IndieFlower-Regular;
+  }
 
-.f1 {
-  &:hover {
-    opacity: 0.6;
+  .f1 {
+    &:hover {
+      opacity: 0.6;
+      transition: all 0.2s ease;
+    }
+    position: absolute;
+    left: 80%;
+    top: 40%;
+    opacity: 0.3;
     transition: all 0.2s ease;
   }
-  position: absolute;
-  left: 80%;
-  top: 40%;
-  opacity: 0.3;
-  transition: all 0.2s ease;
-}
-.f2 {
-  &:hover {
-    opacity: 0.6;
+  .f2 {
+    &:hover {
+      opacity: 0.6;
+      transition: all 0.2s ease;
+    }
+    position: absolute;
+    left: 19.6%;
+    top: 29%;
+    opacity: 0.3;
     transition: all 0.2s ease;
   }
-  position: absolute;
-  left: 19.6%;
-  top: 29%;
-  opacity: 0.3;
-  transition: all 0.2s ease;
-}
-.f3 {
-  &:hover {
-    opacity: 0.6;
+  .f3 {
+    &:hover {
+      opacity: 0.6;
+      transition: all 0.2s ease;
+    }
+    position: absolute;
+    left: 60.5%;
+    top: 85%;
+    opacity: 0.3;
     transition: all 0.2s ease;
   }
-  position: absolute;
-  left: 60.5%;
-  top: 85%;
-  opacity: 0.3;
-  transition: all 0.2s ease;
-}
-.f4 {
-  &:hover {
-    opacity: 0.6;
+  .f4 {
+    &:hover {
+      opacity: 0.6;
+      transition: all 0.2s ease;
+    }
+    position: absolute;
+    left: 83%;
+    top: 65%;
+    opacity: 0.3;
     transition: all 0.2s ease;
   }
-  position: absolute;
-  left: 83%;
-  top: 65%;
-  opacity: 0.3;
-  transition: all 0.2s ease;
-}
-.f5 {
-  &:hover {
-    opacity: 0.6;
+  .f5 {
+    &:hover {
+      opacity: 0.6;
+      transition: all 0.2s ease;
+    }
+    position: absolute;
+    left: 12%;
+    top: 50%;
+    opacity: 0.3;
     transition: all 0.2s ease;
   }
-  position: absolute;
-  left: 12%;
-  top: 50%;
-  opacity: 0.3;
-  transition: all 0.2s ease;
-}
-.f6 {
-  &:hover {
-    opacity: 0.6;
+  .f6 {
+    &:hover {
+      opacity: 0.6;
+      transition: all 0.2s ease;
+    }
+    position: absolute;
+    left: 83%;
+    top: 20%;
+    opacity: 0.3;
     transition: all 0.2s ease;
   }
-  position: absolute;
-  left: 83%;
-  top: 20%;
-  opacity: 0.3;
-  transition: all 0.2s ease;
-}
-.f7 {
-  &:hover {
-    opacity: 0.6;
+  .f7 {
+    &:hover {
+      opacity: 0.6;
+      transition: all 0.2s ease;
+    }
+    position: absolute;
+    left: 60%;
+    top: 9%;
+    opacity: 0.3;
     transition: all 0.2s ease;
   }
-  position: absolute;
-  left: 60%;
-  top: 9%;
-  opacity: 0.3;
-  transition: all 0.2s ease;
-}
-.f8 {
-  &:hover {
-    opacity: 0.6;
+  .f8 {
+    &:hover {
+      opacity: 0.6;
+      transition: all 0.2s ease;
+    }
+    position: absolute;
+    left: 10%;
+    top: 14%;
+    opacity: 0.3;
     transition: all 0.2s ease;
   }
-  position: absolute;
-  left: 10%;
-  top: 14%;
-  opacity: 0.3;
-  transition: all 0.2s ease;
-}
-.f9 {
-  &:hover {
-    opacity: 0.6;
+  .f9 {
+    &:hover {
+      opacity: 0.6;
+      transition: all 0.2s ease;
+    }
+    position: absolute;
+    left: 27%;
+    top: 79%;
+    opacity: 0.3;
     transition: all 0.2s ease;
   }
-  position: absolute;
-  left: 27%;
-  top: 79%;
-  opacity: 0.3;
-  transition: all 0.2s ease;
-}
-.f10 {
-  &:hover {
-    opacity: 0.6;
+  .f10 {
+    &:hover {
+      opacity: 0.6;
+      transition: all 0.2s ease;
+    }
+    position: absolute;
+    left: 10%;
+    top: 90%;
+    opacity: 0.3;
     transition: all 0.2s ease;
   }
-  position: absolute;
-  left: 10%;
-  top: 90%;
-  opacity: 0.3;
-  transition: all 0.2s ease;
 }

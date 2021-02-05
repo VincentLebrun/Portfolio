@@ -7,11 +7,11 @@ import { useLocation } from "react-router-dom";
 import { Lside } from "./components/Lside";
 import { Rside } from "./components/Rside";
 import { Header } from "./components/Header";
+import { motion } from "framer-motion";
 
 const App = () => {
-
   return (
-    <div className="main">
+    <motion.div initial="out" animate="in" exit="out" className="main">
       <Header />
 
       <Row>
@@ -22,7 +22,7 @@ const App = () => {
           <Rside />
         </Col>
       </Row>
-    </div>
+    </motion.div>
   );
 };
 

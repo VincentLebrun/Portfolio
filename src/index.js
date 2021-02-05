@@ -2,17 +2,19 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import Projets from "./components/Projets";
-
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 
 export const Root = () => {
   return (
-    <BrowserRouter>
-      <Switch>
-        <Route exact path="/" component={App} />
-        <Route exact path="/projets" component={Projets} />
-      </Switch>
-    </BrowserRouter>
+    <AnimatePresence exitBeforeEnter>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={App} />
+          <Route exact path="/projets" component={Projets} />
+        </Switch>
+      </BrowserRouter>
+    </AnimatePresence>
   );
 };
 

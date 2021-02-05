@@ -1,22 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Row } from "antd";
 import { useSpring, animated } from "react-spring";
 import { Header } from "./Header";
 import { motion } from "framer-motion";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowAltCircleRight } from "@fortawesome/free-solid-svg-icons";
-import {
-  EditOutlined,
-  EllipsisOutlined,
-  SettingOutlined,
-} from "@ant-design/icons";
 import { Card } from "./Card";
-const { Meta } = Card;
+import { paragraphs } from "./Content";
 
 const Projets = () => {
+  // hooks
+  const [content, setContent] = useState({
+    p: paragraphs.default.text,
+    src: paragraphs.default.src,
+    desc: paragraphs.default.desc,
+    title: paragraphs.default.title,
+  });
+
+  const onBgChange = (project) => {
+    setContent({
+      p: project.text,
+      src: project.src,
+      desc: project.desc,
+      title: project.title,
+    });
+  };
+
+  // End hooks
+  // ANIMATION
   const calc = (x, y) => [
-    (y - window.innerHeight / 2) / 300,
-    (x - window.innerWidth / 2) / 300,
+    (y - window.innerHeight / 2) / 100,
+    (x - window.innerWidth / 2) / 100,
     1,
   ];
   const trans = (x, y, s) =>
@@ -26,23 +38,53 @@ const Projets = () => {
     config: { mass: 10, tensions: 20, friction: 50 },
   }));
 
-  return (
-    <div className="projectsMain">
-      <Header />
-      <div className="projectsWrapper">
-        {/* CONTENT */}
+  const pageTransition = {
+    in: {
+      opacity: 1,
+    },
+    out: {
+      opacity: 0,
+    },
+  };
 
+  return (
+    // JSX //
+    <motion.div
+      variants={pageTransition}
+      initial="out"
+      animate="in"
+      exit="out"
+      className="projectsMain"
+    >
+      <Header />
+      <div style={{ overflow: "hidden" }} className="projectsWrapper">
+        {/* CONTENT */}
         <Row>
+          {/* Colonne de gauche */}
           <Col span={24} lg={12} className="leftMain lc">
             <div className="introProject">
-              <p>
-                <img src={require("../img/carbon.svg").default} alt="" /> Ici{" "}
-                <span className="orange">mes projets</span> Lorem ipsum dolor
-                sit amet, consectetur adipisicing elit. Quod culpa et molestiae
-                animi velit dicta, voluptate nostrum laborum possimus. Ratione
-                sit fugit perferendis perspiciatis fuga, nostrum voluptas hic.
-                Necessitatibus, sit.
-              </p>
+              {/* Titre MES PROJETS */}
+              <motion.h1
+                variants={pageTransition}
+                animate="in"
+                initial="out"
+                transition={{ delay: 0.5 }}
+              >
+                mes projets
+              </motion.h1>
+              <motion.h3
+                variants={pageTransition}
+                animate="in"
+                initial="out"
+                transition={{ delay: 0.75 }}
+              >
+                <img src={require("../img/carbon.svg").default} alt="" /> Une
+                partie des <span className="orange"> projets</span> que j'ai
+                réalisé :
+                <div className="skill">
+                  <br />
+                </div>
+              </motion.h3>
             </div>
             <Row
               style={{ margin: 0 }}
@@ -51,69 +93,109 @@ const Projets = () => {
               className="row"
             >
               <Col className="col">
-                <Card
-                  title={"HTML5 / CSS / JavaScript"}
-                  src={require("../img/bricotech.svg").default}
-                  link={"http://www.bricotech83.fr"}
-                />
+                {/* CARDS */}
+                <motion.div
+                  variants={pageTransition}
+                  animate="in"
+                  initial="out"
+                  transition={{ delay: 1 }}
+                >
+                  <Card
+                    title={"Page web"}
+                    src={require("../img/bricotech.svg").default}
+                    link={"http://www.bricotech83.fr"}
+                    project={paragraphs.bricotech}
+                    onBgChange={onBgChange}
+                  />
+                </motion.div>
               </Col>
               <Col className="col">
-                <Card
-                  title={"React.js / FramerMotion / Apis"}
-                  src={require("../img/covid.svg").default}
-                  link={"https://covidtracker-24287.web.app/"}
-                />
+                <motion.div
+                  variants={pageTransition}
+                  animate="in"
+                  initial="out"
+                  transition={{ delay: 1 }}
+                >
+                  <Card
+                    title={"Application React"}
+                    src={require("../img/covid.svg").default}
+                    link={"https://covidtracker-24287.web.app/"}
+                    project={paragraphs.coronavirus}
+                    onBgChange={onBgChange}
+                  />
+                </motion.div>
               </Col>
             </Row>
           </Col>
-          <Col span={24} lg={12} className="rightSide"></Col>
+          {/* Colonne de droite */}
+
+          <Col span={24} lg={12} className="rs">
+            <motion.h1
+              animate={{ x: 0 }}
+              initial={{ x: 300 }}
+              transition={{ duration: 0.55 }}
+              className="orange title"
+            >
+              {" "}
+              {content.title}{" "}
+            </motion.h1>
+
+            {/* BROWSER SCREENSHOT */}
+            <div className="rswrapper">
+              <animated.div
+                onMouseMove={({ clientX: x, clientY: y }) =>
+                  set({ xys: calc(x, y) })
+                }
+                onMouseLeave={() => set({ xys: [0, 0, 1] })}
+                style={{ transform: props.xys.interpolate(trans) }}
+                className="browserz"
+              >
+                <motion.div
+                  animate={{ x: 0 }}
+                  initial={{ x: 300 }}
+                  transition={{ duration: 0.65 }}
+                  className="browsercontent"
+                >
+                  <img
+                    className="browserimage"
+                    src={require(`../img/${content.src}`).default}
+                    alt="icon data"
+                  />
+                </motion.div>
+              </animated.div>
+              {/* DESCRIPTION PROJET */}
+              <motion.p
+                animate={{ x: 0 }}
+                initial={{ x: 300 }}
+                transition={{ duration: 0.8 }}
+              >
+                <img
+                  style={{ width: "2rem" }}
+                  src={require("../img/fluent.svg").default}
+                  alt="icon stack"
+                />{" "}
+                {content.p}
+              </motion.p>
+
+              {/* TECHNO UTILISE DANS CE PROJET */}
+
+              <motion.p
+                animate={{ x: 0 }}
+                initial={{ x: 300 }}
+                transition={{ duration: 1 }}
+              >
+                {content.desc.call()}
+              </motion.p>
+            </div>
+          </Col>
         </Row>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
 export default Projets;
 
-// <div className="content">
-//           <Row>
-//             <Col className="left" span={12}>
-//               <Row justify="space-around" className="row">
-//                 <Col>
-//                   <Card
-//                     title={"HTML5 / CSS / JavaScript"}
-//                     src={require("../img/bricotech.svg").default}
-//                     link={"http://www.bricotech83.fr"}
-//                   />
-//                 </Col>
-//                 <Col>
-//                   <Card
-//                     title={"React.js / FramerMotion / Apis"}
-//                     src={require("../img/covid.svg").default}
-//                     link={"https://covidtracker-24287.web.app/"}
-//                   />
-//                 </Col>
-//               </Row>
-//             </Col>
-//             <Col className="right" span={12}></Col>
-//           </Row>
-//         </div>
-
-// <animated.div
-// onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
-// onMouseLeave={() => set({ xys: [0, 0, 1] })}
-// style={{ transform: props.xys.interpolate(trans) }}
-// className="browserWrapper"
-// >
-// <img
-//   className="browser"
-//   src={require("../img/browser.svg").default}
-//   alt=""
-// />
-
-// <img
-//   className="browserContent"
-//   src={require("../img/snapbricotech1.jpg").default}
-//   alt=""
-// />
-// </animated.div>
+// <Default bOn={"block"} />
+// <Covidtracker bOn={"block"} />
+// <Bricotech bOn={"block"} />

@@ -2,9 +2,12 @@ import { Col, Row } from "antd";
 import React from "react";
 import { Link } from "react-router-dom";
 import { Typewriter } from "react-typewriting-effect";
+import { AnimatePresence, motion } from "framer-motion";
 import "react-typewriting-effect/dist/index.css";
 
 export const Header = ({ style }) => {
+  const c = "<";
+  const f = "/>";
   return (
     <div className="headerWrapper">
       <Row>
@@ -12,7 +15,7 @@ export const Header = ({ style }) => {
           <div className="brand">
             <span className="orange">amine</span>.abdelli
             <span className="orange">
-              ({" "}
+              (
               <span style={{ color: "#B22222" }} class="typeWritter">
                 "
                 <Typewriter
@@ -27,13 +30,13 @@ export const Header = ({ style }) => {
             </span>
           </div>
         </Col>
-        <Col span={12}>
+        <Col className="justify" span={12}>
           <div style={style} className="nav">
             <Link to="/">
-              <p>home</p>
+              <p>accueil</p>
             </Link>
             <Link to="/projets">
-              <p>project</p>
+              <p>projets</p>
             </Link>
           </div>
         </Col>

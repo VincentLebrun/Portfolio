@@ -1,12 +1,10 @@
-import {
-  faExternalLinkAlt,
-  faLink,
-  faLongArrowAltRight,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import ReactDOM from "react-dom";
+import { faLink, faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { paragraphs } from "./Content";
 
-export const Card = ({ src, title, link }) => {
+export const Card = ({ src, title, link, project, onBgChange }) => {
   return (
     <div>
       <div className="card">
@@ -21,7 +19,13 @@ export const Card = ({ src, title, link }) => {
               </a>
             </div>
             <div className="round">
-              <FontAwesomeIcon className="icon" icon={faLongArrowAltRight} />
+              <FontAwesomeIcon
+                className="icon"
+                icon={faLongArrowAltRight}
+                onClick={() => {
+                  onBgChange(project);
+                }}
+              />
             </div>
           </div>
         </div>

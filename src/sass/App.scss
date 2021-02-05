@@ -1,12 +1,12 @@
 @import "./reset", "./variables", "./right_s", "./left_s", "./floats",
-  "./mixins", "./header", "./fonts.scss", "./animation", "./projets";
+  "./mixins", "./header", "./fonts.scss", "./animation", "./projets", "./card";
 @import "./fonts/fonts.scss";
 @include blink;
 @include fonts;
 
 body {
   font-family: "Fira Sans", sans-serif;
-  height: 100vh;
+  min-height: 100vh;
 
   .orange {
     color: $orange;
