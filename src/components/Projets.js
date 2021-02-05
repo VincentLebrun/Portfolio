@@ -131,9 +131,9 @@ const Projets = () => {
 
           <Col span={24} lg={12} className="rs">
             <motion.h1
-              animate={{ x: 0 }}
-              initial={{ x: 300 }}
-              transition={{ duration: 0.55 }}
+              animate={{ x: 0, opacity: 1 }}
+              initial={{ x: 200, opacity: 0 }}
+              transition={{ delay: 0.6 }}
               className="orange title"
             >
               {" "}
@@ -151,9 +151,9 @@ const Projets = () => {
                 className="browserz"
               >
                 <motion.div
-                  animate={{ x: 0 }}
-                  initial={{ x: 300 }}
-                  transition={{ duration: 0.65 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  initial={{ x: 200, opacity: 0 }}
+                  transition={{ delay: 0.7 }}
                   className="browsercontent"
                 >
                   <img
@@ -165,9 +165,9 @@ const Projets = () => {
               </animated.div>
               {/* DESCRIPTION PROJET */}
               <motion.p
-                animate={{ x: 0 }}
-                initial={{ x: 300 }}
-                transition={{ duration: 0.8 }}
+                animate={{ x: 0, opacity: 1 }}
+                initial={{ x: 200, opacity: 0 }}
+                transition={{ delay: 0.8 }}
               >
                 <img
                   style={{ width: "2rem" }}
@@ -180,9 +180,9 @@ const Projets = () => {
               {/* TECHNO UTILISE DANS CE PROJET */}
 
               <motion.p
-                animate={{ x: 0 }}
-                initial={{ x: 300 }}
-                transition={{ duration: 1 }}
+                animate={{ x: 0, opacity: 1 }}
+                initial={{ x: 200, opacity: 0 }}
+                transition={{ delay: 0.9 }}
               >
                 {content.desc.call()}
               </motion.p>

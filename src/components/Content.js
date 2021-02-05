@@ -57,7 +57,6 @@ export const Bricotech = () => {
     <motion.div
       animate={{ x: 0 }}
       initial={{ x: 300 }}
-      transition={{ duration: 0.5 }}
       style={style}
       className={`real`}
     >
@@ -105,7 +104,6 @@ export const Covidtracker = () => {
     <motion.div
       animate={{ x: 0 }}
       initial={{ x: 300 }}
-      transition={{ duration: 0.5 }}
       style={style}
       className={`real`}
     >

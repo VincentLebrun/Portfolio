@@ -70,12 +70,11 @@ export const Rside = () => {
         </motion.p>
       </div>
       <motion.div
+        className="logos"
         variants={elementsTransition}
         initial="out"
         animate="in"
-        className="titles"
         transition={{ delay: 1.2 }}
-        className="logos"
       >
         <a
           target="_blank"
@@ -94,6 +93,16 @@ export const Rside = () => {
         </a>
         <a href="mailto:amine.abdelli@outlook.fr">
           <FontAwesomeIcon className="logo_hover" icon={faEnvelope} />
+        </a>
+        <a
+          href={require("../assets/amineabdellicv.pdf").default}
+          rel="noreferrer"
+          target="_blank"
+          download
+        >
+          <div className="logo_hover cv_logo">
+            <div className="adjustcv">cv</div>
+          </div>
         </a>
       </motion.div>
     </div>

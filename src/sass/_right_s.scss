@@ -7,10 +7,8 @@
   align-self: center;
   padding: 5rem;
   color: $bg-cream;
-
   .titles {
     margin: 0rem 0;
-
     h1 {
       font-family: Nexa-Bold;
       font-size: 3.6rem;
@@ -31,8 +29,13 @@
     }
   }
   .logos {
+    display: flex;
+    align-items: center;
     font-size: 3.5rem;
+
     a {
+      margin: 0;
+      padding: 0;
       text-decoration: none;
       color: inherit;
       .logo_hover {
@@ -46,5 +49,27 @@
         }
       }
     }
+  }
+}
+.cv_logo {
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease;
+  width: 3.4rem;
+  height: 3.4rem;
+  border-radius: 50%;
+  border: 3px solid $bg-cream;
+  .adjustcv {
+    position: absolute;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -52%);
+  }
+  &:hover {
+    color: $orange;
+    transform: translateY(-0.5rem);
+    transition: all 0.3s ease;
+    border: 3px solid $orange;
   }
 }
