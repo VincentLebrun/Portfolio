@@ -2,7 +2,6 @@ import React from "react";
 import "antd/dist/antd.css";
 import "./sass/App.scss";
 import { Col, Row } from "antd";
-import { useLocation } from "react-router-dom";
 
 import { Lside } from "./components/Lside";
 import { Rside } from "./components/Rside";

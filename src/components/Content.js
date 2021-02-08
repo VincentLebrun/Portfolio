@@ -61,7 +61,7 @@ export const Bricotech = () => {
       className={`real`}
     >
       <p>
-        {img.call()} Projet réalisé en{" "}
+        {img.call()} Projet réalisé avec{" "}
         <span>
           <img
             className="svg"
@@ -73,19 +73,19 @@ export const Bricotech = () => {
         <span>
           <img
             className="svg"
+            src={require("../img/css.svg").default}
+            alt="icon sass"
+          />
+        </span>
+        CSS,{" "}
+        <span>
+          <img
+            className="svg"
             src={require("../img/BiBootstrap.svg").default}
             alt="icon bootstrap"
           />
         </span>
         Bootstrap,{" "}
-        <span>
-          <img
-            className="svg"
-            src={require("../img/mdi-sass.svg").default}
-            alt="icon sass"
-          />
-        </span>
-        Sass,{" "}
         <span>
           <img
             className="svg"

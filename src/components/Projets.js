@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Col, Row } from "antd";
 import { useSpring, animated } from "react-spring";
 import { Header } from "./Header";
@@ -127,8 +127,8 @@ const Projets = () => {
               </Col>
             </Row>
           </Col>
-          {/* Colonne de droite */}
 
+          {/* Colonne de droite */}
           <Col span={24} lg={12} className="rs">
             <motion.h1
               animate={{ x: 0, opacity: 1 }}
@@ -153,7 +153,7 @@ const Projets = () => {
                 <motion.div
                   animate={{ x: 0, opacity: 1 }}
                   initial={{ x: 200, opacity: 0 }}
-                  transition={{ delay: 0.7 }}
+                  transition={{ delay: 0.8 }}
                   className="browsercontent"
                 >
                   <img
@@ -167,7 +167,7 @@ const Projets = () => {
               <motion.p
                 animate={{ x: 0, opacity: 1 }}
                 initial={{ x: 200, opacity: 0 }}
-                transition={{ delay: 0.8 }}
+                transition={{ delay: 1 }}
               >
                 <img
                   style={{ width: "2rem" }}
@@ -182,7 +182,7 @@ const Projets = () => {
               <motion.p
                 animate={{ x: 0, opacity: 1 }}
                 initial={{ x: 200, opacity: 0 }}
-                transition={{ delay: 0.9 }}
+                transition={{ delay: 1.2 }}
               >
                 {content.desc.call()}
               </motion.p>
@@ -195,7 +195,3 @@ const Projets = () => {
 };
 
 export default Projets;
-
-// <Default bOn={"block"} />
-// <Covidtracker bOn={"block"} />
-// <Bricotech bOn={"block"} />

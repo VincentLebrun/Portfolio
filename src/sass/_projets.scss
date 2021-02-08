@@ -88,12 +88,10 @@
     }
 
     .real {
-      h3 {
-        color: $bg-cream;
-        .svg {
-          margin-right: 0.3rem;
-          width: 2rem;
-        }
+      color: $bg-cream;
+      .svg {
+        margin-right: 0.3rem;
+        width: 2rem;
       }
     }
   }

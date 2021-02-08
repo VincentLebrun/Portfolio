@@ -40,52 +40,52 @@ export const Lside = () => {
 
       <div className="floatwrapper">
         <p>
-          <span class="orange layer f1" data-speed="3">
+          <span className="orange layer f1" data-speed="3">
             css
           </span>
         </p>
         <p>
-          <span class="orange layer f2" data-speed="1">
+          <span className="orange layer f2" data-speed="1">
             html
           </span>
         </p>
         <p>
-          <span class="orange layer f3" data-speed="3">
+          <span className="orange layer f3" data-speed="3">
             javascript
           </span>
         </p>
         <p>
-          <span class="orange layer f4" data-speed="-3">
+          <span className="orange layer f4" data-speed="-3">
             php
           </span>
         </p>
         <p>
-          <span class="orange layer f5" data-speed="3">
+          <span className="orange layer f5" data-speed="3">
             sass
           </span>
         </p>
         <p>
-          <span class="orange layer f6" data-speed="-3">
+          <span className="orange layer f6" data-speed="-3">
             git
           </span>
         </p>
         <p>
-          <span class="orange layer f7" data-speed="3">
+          <span className="orange layer f7" data-speed="3">
             bootstrap
           </span>
         </p>
         <p>
-          <span class="orange layer f8" data-speed="-3">
+          <span className="orange layer f8" data-speed="-3">
             mongodb
           </span>
         </p>
         <p>
-          <span class="orange layer f9" data-speed="3">
+          <span className="orange layer f9" data-speed="3">
             mysql
           </span>
         </p>
         <p>
-          <span class="orange layer f10" data-speed="3">
+          <span className="orange layer f10" data-speed="3">
             react
           </span>
         </p>

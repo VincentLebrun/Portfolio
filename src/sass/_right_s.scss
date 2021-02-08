@@ -7,8 +7,10 @@
   align-self: center;
   padding: 5rem;
   color: $bg-cream;
+
   .titles {
     margin: 0rem 0;
+
     h1 {
       font-family: Nexa-Bold;
       font-size: 3.6rem;
@@ -21,14 +23,18 @@
       font-size: 2.4rem;
     }
   }
+
   .mainSection {
     font-size: 1.8rem;
+
     p {
       font-family: Fira-Light;
       text-align: justify;
     }
   }
+
   .logos {
+    padding: 2rem 0;
     display: flex;
     align-items: center;
     font-size: 3.5rem;
@@ -38,6 +44,7 @@
       padding: 0;
       text-decoration: none;
       color: inherit;
+
       .logo_hover {
         transition: all 0.3s ease;
         margin-right: 1.5rem;
@@ -51,6 +58,7 @@
     }
   }
 }
+
 .cv_logo {
   position: relative;
   display: inline-block;
@@ -59,17 +67,20 @@
   height: 3.4rem;
   border-radius: 50%;
   border: 3px solid $bg-cream;
+  transform: translateY(0.25rem);
+
+  &:hover {
+    color: $orange;
+    transform: translateY(-0.5rem);
+    transition: all 0.3s ease;
+    border: 3px solid $orange;
+  }
+
   .adjustcv {
     position: absolute;
     font-size: 2rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -52%);
-  }
-  &:hover {
-    color: $orange;
-    transform: translateY(-0.5rem);
-    transition: all 0.3s ease;
-    border: 3px solid $orange;
   }
 }

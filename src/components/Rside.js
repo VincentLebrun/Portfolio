@@ -29,11 +29,8 @@ export const Rside = () => {
         transition={{ delay: 0.6 }}
       >
         <h1 className="name cream">Amine Abdelli</h1>
-        <h1 className="orange">Developpeur Web</h1>
-        <p className="cream">
-          Recherche stage de développeur fullstack{" "}
-          <span className="orange">REACT / PHP</span>
-        </p>
+        <h1 className="orange">Développeur Web</h1>
+        <p className="cream">Recherche stage de développeur web</p>
       </motion.div>
 
       <div className="mainSection cream">
@@ -44,7 +41,7 @@ export const Rside = () => {
           className="titles"
           transition={{ delay: 0.8 }}
         >
-          Ce <span className="orange">portfolio</span> est une fenetre ouverte
+          Ce <span className="orange">portfolio</span> est une fenêtre ouverte
           sur mes projets que je crée de toute pièce avec beaucoup de plaisir et
           d'<span className="orange">enthousiasme</span>. <br />
         </motion.p>
@@ -56,17 +53,16 @@ export const Rside = () => {
           className="titles"
           transition={{ delay: 1 }}
         >
-          Tout récemment, après avoir vécu 4 ans en Australie, j'ai mis de côté
-          mon tablier de cuisinier pour entrer dans ce vaste univers qu'est le{" "}
-          <span className="orange">développement</span>. Qui sans le savoir, est
-          devenu une vrai <span className="orange">passion</span>. Je
-          recherchais un domaine qui mèle à la fois science et ésthétique, et
+          Tout récemment, après un long parcours dans l'hôtellerie restauration,
+          j'ai mis de côté mon tablier de cuisinier pour entrer dans ce vaste
+          univers qu'est le <span className="orange">développement</span>, qui
+          est devenu une vraie <span className="orange">passion</span>. Je
+          recherchais un domaine qui mèle à la fois science et esthétique. Et
           ayant toujours été un grand consommateur de contenu en ligne, mon
           choix s'est fait tout naturellement. Je suis un grand{" "}
           <span className="orange">curieux</span> de nature et{" "}
-          <span className="orange">autodidacte</span>. J'aime comprendre les
-          choses. Et je travail constamment à m'améliore et apprendre de
-          nouvelles choses. Bonne visite !
+          <span className="orange">autodidacte</span>. Je travail constamment à
+          m'améliorer et apprendre de nouvelles choses. Bonne visite !
         </motion.p>
       </div>
       <motion.div

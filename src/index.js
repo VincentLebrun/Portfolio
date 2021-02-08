@@ -2,18 +2,18 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import Projets from "./components/Projets";
-import { BrowserRouter, Switch, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, HashRouter, Switch, Route } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
 export const Root = () => {
   return (
     <AnimatePresence exitBeforeEnter>
-      <BrowserRouter>
+      <HashRouter>
         <Switch>
           <Route exact path="/" component={App} />
           <Route exact path="/projets" component={Projets} />
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     </AnimatePresence>
   );
 };
