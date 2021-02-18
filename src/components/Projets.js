@@ -9,7 +9,7 @@ import { paragraphs } from "./Content";
 const Projets = () => {
   // hooks
   const [content, setContent] = useState({
-    p: paragraphs.default.text,
+    text: paragraphs.default.text,
     src: paragraphs.default.src,
     desc: paragraphs.default.desc,
     title: paragraphs.default.title,
@@ -17,7 +17,7 @@ const Projets = () => {
 
   const onBgChange = (project) => {
     setContent({
-      p: project.text,
+      text: project.text,
       src: project.src,
       desc: project.desc,
       title: project.title,
@@ -100,6 +100,8 @@ const Projets = () => {
                   initial="out"
                   transition={{ delay: 1 }}
                 >
+                
+
                   <Card
                     title={"Page web"}
                     src={require("../img/bricotech.svg").default}
@@ -107,6 +109,7 @@ const Projets = () => {
                     project={paragraphs.bricotech}
                     onBgChange={onBgChange}
                   />
+                
                 </motion.div>
               </Col>
               <Col className="col">
@@ -134,6 +137,7 @@ const Projets = () => {
               animate={{ x: 0, opacity: 1 }}
               initial={{ x: 200, opacity: 0 }}
               transition={{ delay: 0.6 }}
+              id="projectAnchor"
               className="orange title"
             >
               {" "}
@@ -174,7 +178,7 @@ const Projets = () => {
                   src={require("../img/fluent.svg").default}
                   alt="icon stack"
                 />{" "}
-                {content.p}
+                {content.text}
               </motion.p>
 
               {/* TECHNO UTILISE DANS CE PROJET */}

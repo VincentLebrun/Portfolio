@@ -1,6 +1,7 @@
 import React from "react";
 import { faLink, faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 export const Card = ({ src, title, link, project, onBgChange }) => {
   return (
@@ -9,17 +10,19 @@ export const Card = ({ src, title, link, project, onBgChange }) => {
         onBgChange(project);
       }}
     >
+      
+      <AnchorLink href='#projectAnchor'>
       <div className="card">
         <img src={src} alt="" />
         <div className="overlay">
           <p>{title}</p>
 
           <div className="overwrapper">
-            <div className="round">
-              <a target="_blank" href={link} rel="noreferrer">
+            <a target="_blank" href={link} rel="noreferrer">
+              <div className="round">
                 <FontAwesomeIcon className="icon" icon={faLink} />
-              </a>
-            </div>
+              </div>
+            </a>
             <div
               className="round"
               onClick={() => {
@@ -31,6 +34,7 @@ export const Card = ({ src, title, link, project, onBgChange }) => {
           </div>
         </div>
       </div>
+      </AnchorLink>
     </div>
   );
 };

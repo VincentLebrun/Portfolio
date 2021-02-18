@@ -37,6 +37,9 @@ export const Lside = () => {
         id="imgContainer"
         ref={container}
       />
+      <div className="parent-resized">
+        <img src={require("../img/photoResized.png").default} alt="Avatar"/>
+      </div>
 
       <div className="floatwrapper">
         <p>

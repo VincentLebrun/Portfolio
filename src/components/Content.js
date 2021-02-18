@@ -188,6 +188,7 @@ export const paragraphs = {
     srcbis: "cdsnap2.png",
     text:
       "Application de visualisation de données relatives au coronavirus. Celle-ci nous permet de voir à l'aide d'une carte et d'un graphique l'évolution du coronavirus depuis le 1er Janvier 2020. Les données sont extraites d'API publique puis injectées dans l'interface graphique.",
+
     desc: () => {
       return (
         <div>
