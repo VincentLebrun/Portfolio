@@ -61,8 +61,8 @@ export const Rside = () => {
           ayant toujours été un grand consommateur de contenu en ligne, mon
           choix s'est fait tout naturellement. Je suis un grand{" "}
           <span className="orange">curieux</span> de nature et{" "}
-          <span className="orange">autodidacte</span>. Je travail constamment à
-          m'améliorer et apprendre de nouvelles choses. Bonne visite !
+          <span className="orange">autodidacte</span>. Je travaille constamment
+          à m'améliorer et apprendre de nouvelles choses. Bonne visite !
         </motion.p>
       </div>
       <motion.div

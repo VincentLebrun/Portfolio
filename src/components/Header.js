@@ -2,12 +2,9 @@ import { Col, Row } from "antd";
 import React from "react";
 import { Link } from "react-router-dom";
 import { Typewriter } from "react-typewriting-effect";
-import { AnimatePresence, motion } from "framer-motion";
 import "react-typewriting-effect/dist/index.css";
 
 export const Header = ({ style }) => {
-  const c = "<";
-  const f = "/>";
   return (
     <div className="headerWrapper">
       <Row>

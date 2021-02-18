@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import Projets from "./components/Projets";
-import { BrowserRouter, HashRouter, Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
 export const Root = () => {
