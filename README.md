@@ -4,6 +4,6 @@
 <p>In this project i have used : <br>
 <strong><em>React ( JSX, React-Router, Hooks ), Sass, Framermotion & Antdesign</em></strong></p>
 
-Click on the link down below to access my portfolio ;)
+Click on the link down below to access my portfolio <br>
 <a href="https://portfolio-7a7b0.web.app/">www.amineabdelli.fr</a>
 
